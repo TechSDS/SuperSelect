@@ -22,11 +22,13 @@
   z-index: 999;
   position: fixed;
   box-sizing: border-box;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
-  padding: 10px;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
+  padding: 0.1rem;
+  border: 0.1rem solid #fff;
+  border-top: 1.2rem solid #fff;
   background: #fff;
   opacity: 1;
   overflow: auto;
@@ -35,19 +37,22 @@
 
 .SuperSelectCloseButton {
   position: fixed;
+  z-index: 1000;
   box-sizing: border-box;
-  top: 10%;
-  left: 90%;
-  margin-left: -25px;
-  color: #888;
-  font-size: 23px;
+  top: 2%;
+  right: 2%;
+  margin-left: -1rem;
+  margin-top: -0.9rem;
+  color: #933;
+  font-size: 2rem;
   text-align: center;
   font-family: 'Arial Black'; 
   font-weight: bold; 
 }
 
 .SuperSelectCloseButton:hover {
-  color: #000;
+  color: #f99;
+  text-shadow: 0px 0px 4px #000 ;
   cursor: pointer;
 }
 
@@ -55,19 +60,54 @@
   box-sizing: border-box;
   width: 100%;
   background: #fff;
-  padding: 10px;
+  padding: 0.1rem;
+  font-size: 1rem;
 }
 
 .SuperSelectChoosedP {
-  background: #ff0;
+  background: #55a;
+  color: #fff;
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 0.1rem;
+  font-size: 1rem;
 }
 
 .SuperSelectChooseP:hover,
 .SuperSelectChoosedP:hover {
-  background: #fd0;
+  background: #449;
+  color: #fff;
   cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+  .SuperSelectChooseDiv {
+    z-index: 999;
+    position: fixed;
+    box-sizing: border-box;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    padding: 0.1rem;
+    border: 0.1rem solid #fff;
+    border-top: 0.1rem solid #fff;
+    background: #fff;
+    opacity: 1;
+    overflow: auto;
+    cursor: default;
+  }
+  
+  .SuperSelectCloseButton {
+    position: fixed;
+    box-sizing: border-box;
+    top: 2.5%;
+    right: 5%;
+    color: #aaa;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Arial Black'; 
+    font-weight: bold; 
+  }
 }
 

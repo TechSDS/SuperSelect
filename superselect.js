@@ -1,4 +1,4 @@
-//Autor IvanShabanov 2015
+//Autor Ivan Shabanov 2015
 
 //Инициализация SuperSelect у елемента
 function InitSuperSelect(el) {
@@ -51,7 +51,7 @@ function SuperSelectChooseThis(el, selected) {
      }
     });
   }
-  $(el).parent('div').parent('div').hide('normal', function () {
+  $(el).parent('div').parent('div').hide('fast', function () {
     this.remove() ; 
     $(select).show();
     if (val != '[SuperSelecNotChoosed]') {
